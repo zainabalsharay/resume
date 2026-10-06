@@ -1,167 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zainab Mansour — Full Stack Web Developer and Laravel Developer Portfolio.">
+    <meta name="theme-color" content="#07111f">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
     <link rel="icon" href="img/icons8-portfolio-48.png">
     <link rel="stylesheet" href="style.css">
-    <title>Zainab Cv / Portfolio </title>
+    
+    <title>Zainab Mansour | Full Stack Laravel Developer</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html" class="logo">ZM <span>Developer</span><i class="fa fa-code"></i></a>
-        </button>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+    <div id="top"></div>
 
+    <!-- Glow Backgrounds -->
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <a href="#home" class="logo" aria-label="Zainab Mansour home">
+            <span class="logo-mark">Z</span>
+            <span>Zainab<span class="logo-accent">.</span></span>
+        </a>
+
+        <nav class="navigation" id="nav-menu" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
+
+        <div class="header-right">
+            <a href="ZainabCV_2024.pdf" target="_blank" class="header-cv">
+                <i class="fa-regular fa-file-lines"></i> CV
+            </a>
+            <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="pulse-dot"></span> FULL STACK WEB DEVELOPER</div>
+                <h1>Building modern web systems with <em>Laravel.</em></h1>
+                <p class="hero-text">
+                    I design and develop responsive websites, powerful admin dashboards, and business management systems with a focus on clean architecture, usability, and polished interfaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="ZainabCV_2024.pdf" target="_blank" class="btn btn-ghost"><i class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+                <div class="social-row">
+                    <a href="https://github.com/zainabalsharay/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zainab-alsharay/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/zainb.mansoure/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
 
-    <section class="section-about" id="About">
-        <div>
-            <h1>Hello, I'am Zainab Mansour</h1>
-            <h3>Frontend Developer</h3>
-            <p>High level experience in Front-End Developer,<br>
-                I specialize in crafting dynamic and responsive web applications. </p>
-            <a href="/ZainabCV_2024.pdf" target="_blank" class="main-btn" download="" rel="noopener noreferrer">
-                <span class="st-social-icon"><i class="fa-solid fa-download"></i></span>Download CV</a>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/zainb.mansoure/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/zainab-alsharay/" target="_blank">
-                    <i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/zainabalsharay/" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="hero-visual" aria-label="Developer profile visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="code-card">
+                    <div class="window-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <small>developer.php</small>
+                    </div>
+                    <div class="code-content">
+                        <div><b class="pink">class</b> <b class="cyan">Zainab</b></div>
+                        <div>&nbsp;&nbsp;<span class="pink">extends</span> Developer</div>
+                        <div>{</div>
+                        <div>&nbsp;&nbsp;<span class="pink">public</span> <span class="purple">function</span> build()</div>
+                        <div>&nbsp;&nbsp;{</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">return</span> <span class="yellow">'Ideas → Products'</span>;</div>
+                        <div>&nbsp;&nbsp;}</div>
+                        <div>}</div>
+                    </div>
+                    <div class="tech-pills">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>Filament</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="floating-card card-top">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div><strong>Real Projects</strong><small>Websites & systems</small></div>
+                </div>
+                <div class="floating-card card-bottom">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div><strong>Admin Dashboards</strong><small>Scalable architecture</small></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-skil" id="Skills">
-        <h2 class="title">My Skills</h2>
-        <div class="content">
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa fa-code"></i>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <span>ABOUT</span>
+                <h2>Turning requirements into <strong>working products.</strong></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-lead">
+                    <p class="large-copy">I am a Software Engineering graduate and Full Stack Web Developer focused on building practical digital solutions for businesses.</p>
+                    <p>My recent work includes Laravel applications, custom admin dashboards, and management platforms with authentication, roles, REST APIs, database design, and optimized operational workflows.</p>
                 </div>
-                <div class="skill-info">
-                    <h3>Programming</h3>
-                    <p>Strong coding skills across multiple languages including Python, C# and PHP.</p>
+                <div class="about-facts">
+                    <div class="fact-card">
+                        <span>01</span>
+                        <div>
+                            <strong>Laravel Development</strong>
+                            <p>Backend systems, custom business logic, and web APIs.</p>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <span>02</span>
+                        <div>
+                            <strong>Admin Dashboards</strong>
+                            <p>Data-driven management panels for streamlined operations.</p>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <span>03</span>
+                        <div>
+                            <strong>Responsive Interfaces</strong>
+                            <p>Modern experiences optimized for mobile and desktop screens.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="skill-info">
-                    <h3>HTML5</h3>
-                    <p>Expertise in creating semantic and accessible HTML5 structures.</p>
-                </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="section-heading centered">
+                <span>SKILLS</span>
+                <h2>Tools I use to <strong>build.</strong></h2>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="skill-info">
-                    <h3>CSS3</h3>
-                    <p>Proficient in crafting responsive and adaptive designs with CSS3.</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="skill-info">
-                    <h3>JavaScript</h3>
-                    <p>Skilled in developing dynamic and interactive web applications using JavaScript.</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa-brands fa-php"></i>
-                </div>
-                <div class="skill-info">
-                    <h3>PHP</h3>
-                    <p>Knowledgeable in back-end development using PHP for server-side logic.</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa fa-database"></i>
-                </div>
-                <div class="skill-info">
-                    <h3>MySQL</h3>
-                    <p>Experience in designing and managing MySQL databases for web applications.</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fa-brands fa-laravel"></i>
-                </div>
-                <div class="skill-info">
+            <div class="skills-grid">
+                <article class="skill-tile featured">
+                    <div class="tile-icon"><i class="fa-brands fa-laravel"></i></div>
                     <h3>Laravel</h3>
-                    <p>Proficient in using Laravel for developing robust web applications with PHP.</p>
+                    <p>Modern PHP web applications, REST APIs, and core backend infrastructure.</p>
+                    <b class="badge">Core</b>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-brands fa-php"></i></div>
+                    <h3>PHP</h3>
+                    <p>Object-oriented server-side logic and system integrations.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-solid fa-table-columns"></i></div>
+                    <h3>Filament</h3>
+                    <p>Custom admin panels, resource CRUDs, and reporting dashboards.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <p>Relational schema design, query optimization, and Eloquent migrations.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive client-side functionality and dynamic interfaces.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Utility-first styling for responsive and modern application UI.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h3>REST APIs</h3>
+                    <p>Structured API integration, endpoint design, and data serialization.</p>
+                </article>
+                <article class="skill-tile">
+                    <div class="tile-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <h3>Git / GitHub</h3>
+                    <p>Source control workflows, repository management, and collaboration.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="section-heading">
+                <span>SELECTED WORK</span>
+                <h2>Projects built for <strong>real businesses.</strong></h2>
+            </div>
+
+            <div class="projects-list">
+                <article class="project-card project-featured">
+                    <div class="project-media media-owners">
+                        <div class="project-media media-owners">
+                            <img src="img/etihad1.png" alt="Etihad Owners Management System" class="project-img">
+                            <!-- <div class="project-number">01</div> -->
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-label">Management Platform</div>
+                        <h3>Etihad Owners Management System</h3>
+                        <p>A comprehensive property owners platform with a dedicated admin dashboard for owners, buildings, units, maintenance tickets, payments, technicians, and workflow automation.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>Filament</span>
+                            <span>MySQL</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="status"><i class="fa-solid fa-circle"></i> Featured Project</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media media-ajeer">
+                        <div class="project-media media-ajeer">
+                            <img src="img/ajeer1.JPG" alt="Ajeer Al-Mutamayez" class="project-img">
+                            <!-- <div class="project-number">02</div> -->
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-label">Services & Operations</div>
+                        <h3>Ajeer Al-Mutamayez</h3>
+                        <p>Services platform for cleaning and maintenance operations backed by a customizable admin management system.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>Filament</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a class="project-url" href="https://ajeerbest.com/" target="_blank" rel="noopener">
+                            Visit website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media media-law">
+                        <div class="project-media media-law">
+                            <img src="img/law1.png" alt="Law Firm" class="project-img">
+                            <!-- <div class="project-number">03</div> -->
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-label">Law Firm</div>
+                        <h3>Ali Bin Farih Al-Aqlaa Law Firm</h3>
+                        <p>Professional legal services web portal with a dedicated dynamic content backend for team and case management.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a class="project-url" href="https://lawafap.com/sa" target="_blank" rel="noopener">
+                            Visit website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-media media-zaphire">
+                        <div class="project-media media-zaphire">
+                            <img src="img/zaphire1.png" alt="Zaphire Real Estate" class="project-img">
+                            <!-- <div class="project-number">04</div> -->
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-label">Real Estate</div>
+                        <h3>Zaphire Real Estate</h3>
+                        <p>Corporate platform and administrative management portal for real estate services and listing operations.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a class="project-url" href="https://zaphire.com.sa/" target="_blank" rel="noopener">
+                            Visit website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section">
+            <div class="section-heading centered">
+                <span>EXPERIENCE</span>
+                <h2>Professional <strong>Trajectory.</strong></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-time">2019 — 2020</div>
+                    <div class="timeline-content">
+                        <h3>Data Entry & Project Support</h3>
+                        <p>Coordinated with SFD and NWRA/UNICEF projects focused on dataset verification, reporting, and operational support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item current">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-time">2020 — Present</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack & Laravel Web Developer</h3>
+                        <p>Designing, engineering, and launching robust Laravel web applications, API endpoints, and Filament admin dashboards for clients and enterprises.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-project" id="Project">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/work1.JPG" alt="Canteen" />
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact-panel">
+                <div class="section-heading">
+                    <span>CONTACT</span>
+                    <h2>Have a project in mind?</h2>
+                    <p>Let’s turn your requirements into a clean, performant, and scalable web application.</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-description">The Canteen System automates inventory management and sales
-                        transactions to simplify and speed up the selling process.</p>
-                    <strong class="project-title">
-                        <span>Canteen</span>
-                        <a href="https://github.com/zainabalsharay/Canteen-System.git" target="_blank"
-                            class="more-details">More details</a>
-                    </strong>
+                <div class="contact-actions">
+                    <a href="mailto:zainbalsharay2020@gmail.com" class="contact-link">
+                        <div class="icon-box"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="link-text">
+                            <small>Email me</small>
+                            <span>zainbalsharay2020@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/zainabalsharay/" target="_blank" rel="noopener" class="contact-link">
+                        <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+                        <div class="link-text">
+                            <small>GitHub</small>
+                            <span>zainabalsharay</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zainab-alsharay/" target="_blank" rel="noopener" class="contact-link">
+                        <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="link-text">
+                            <small>LinkedIn</small>
+                            <span>zainab-alsharay</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="section-contact" id="Contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="cont">
-            <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                <input type="hidden" name="access_key" value="d8682be0-deba-4809-8bba-757f48117178">
-                <div class="contact-info">
-                    <div class="input">
-                        <label for="">Name</label>
-                        <input type="text" name="name" id="name" required><br>
-                    </div>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required><br>
-                    </div>
-                    <div class="input">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea><br><br>
-                    </div>
-                    <div class="submit">
-                        <button type="submit" id="submit">Send Message</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-        <p class="footer-title">&copy; 2024. Designed by <span>Zainab Mansour</span>. All rights reserved.</p>
+        <span>© <span id="current-year"></span> Zainab Mansour. All rights reserved.</span>
+        <a href="#top" class="back-to-top">
+            Back to top <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
